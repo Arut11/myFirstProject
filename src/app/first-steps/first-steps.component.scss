@@ -1,0 +1,237 @@
+.reg {
+    margin:100px auto; /* Отступы: 100px сверху и снизу, автоматический отступ слева и справа */
+    width: 550px; /* Ширина элемента */
+    height: 500px; /* Высота элемента */
+    border: 1px solid #ddd; /* Граница: 1px, сплошная линия, цвет #ddd */
+    position: relative; /* Позиционирование относительно соседних элементов */
+    border-radius: 10px; /* Закругление углов: 10px */
+    box-shadow: 2px 2px 5px rgba(0,0,0,82); /* Тень: смещение по x 2px, смещение по y 2px, размытие 5px, цвет тени rgba(0,0,0,82) */
+    background: rgba(238, 238, 237, 0.952); /* Фоновый цвет в формате RGBA */
+}
+
+.reg h1 {
+    margin: 10px 10px 10px 10px;
+}
+
+.ribbon { /* Начало Блока кода для эффекта ленты */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 18px; /* Отступ сверху: 18px */
+    left: -17px; /* Отступ слева: -17px */
+    color: #fff; /* Цвет текста: белый */
+    background: #ad2020; /* Фоновый цвет: красный */
+    padding: 0px 220px 0px 20px; /* Заполнение контента: 0 сверху и 0 снизу, 220px справа и 20px слева */
+    height: 40px; /* Высота ленты */
+    line-height: 26px; /* Высота строки контента внутри ленты */
+    box-shadow: 2px 2px 5px rgba(0,0,0,82); /* Тень: смещение по x 2px, смещение по y 2px, размытие 5px, цвет тени rgba(0,0,0,82) */
+}
+.ribbon:before {
+    content: ""; /* Пустое содержимое до псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Отступ сверху: 0 */
+    right: -29px; /* Отступ справа: -29px */
+    width: 0; /* Ширина треугольника */
+    height: 0; /* Высота треугольника */
+    border-top: 0px solid transparent; /* Верхняя граница треугольника: 0px, прозрачная */
+    border-bottom: 40px solid transparent; /* Нижняя граница треугольника: 40px, прозрачная */
+    border-left: 30px solid #ad2020; /* Левая граница треугольника: 30px, красная */
+}
+
+.ribbon:after {
+    content: ""; /* Пустое содержимое после псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование */
+    height: 0; /* Высота треугольника */
+    width: 0; /* Ширина треугольника */
+    border-style: solid; /* Стиль границы: сплошная линия */
+    border-color: #5e1212 transparent transparent; /* Цвет границы: красный, прозрачная, прозрачная */
+    border-width: 13px 0px 17px 15px; /* Толщина границы: 13px сверху, 0px справа и слева, 17px снизу, 15px слева */
+    top: 100%; /* Отступ сверху: 100% */
+    left: 0; /* Отступ слева: 0 */
+} /* конец ленты */
+
+.name {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .name input {
+    margin: 25px 30px 0px 0px;
+    height: 25px;
+    width: 366px;
+    border-radius: 7px;
+    border-color: rgb(27, 121, 121);
+    float: right;
+    background-image: url("minichel.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px; 
+    background-position-x: 10px;
+  }
+
+  .name input:focus {
+    background-image: none; /*Выключить иконку в поле ввода*/
+  }
+
+  .name label {
+     padding: .5em 1em .5em 0;
+     flex: 1;
+     float: left;
+     margin: 25px 0px 0px 30px;
+     font-weight: bold;
+  }
+
+.email {
+    display: flex; /* Создаем flex-контейнер */
+    align-items: center; /* Выравниваем по вертикали по центру */
+}
+
+.email input {
+    margin: 15px 30px 0px 0px;
+    height: 25px;
+    width: 366px;
+    border-radius: 7px;
+    border-color: rgb(27, 121, 121);
+    float: right;
+    background-image: url("conv.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px; 
+    background-position-x: 10px;
+}
+
+.email input:focus {
+    background-image: none; /*Выключить иконку в поле ввода*/
+  }
+
+.email label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+    float: left;
+    margin: 8px 0px 0px 30px;
+    font-weight: bold;
+}
+
+.number {
+    display: flex; /* Создаем flex-контейнер */
+    align-items: center; /* Выравниваем по вертикали по центру */
+}
+
+.number input {
+    margin: 15px 30px 0px 0px;
+    height: 25px;
+    width: 366px;
+    border-radius: 7px;
+    border-color: rgb(27, 121, 121);
+    float: right;
+    background-image: url("phone.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+    background-position-x: 6px;
+}
+
+.number input:focus {
+    background-image: none; /*Выключить иконку в поле ввода*/
+  }
+
+.number label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+    float: left;
+    margin: 8px 0px 0px 30px;
+    font-weight: bold;
+}
+
+.list {
+    display: flex; /* Создаем flex-контейнер */
+    align-items: center; /* Выравниваем по вертикали по центру */
+}
+
+.list select {
+    margin: 15px 30px 0px 0px;
+    height: 30px;
+    width: 372px;
+    border-radius: 7px;
+    border-color: rgb(27, 117, 117);
+    cursor:pointer;
+    float: right;
+    color: #666565; /*Цвет текста внутри поля выпад. списка*/
+}
+
+.list option {
+    color: #666565; /*Цвет текста выпад. списка*/
+}
+
+.list label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+    float: left;
+    margin: 8px 50px 0px 30px;
+    font-weight: bold;
+}
+
+.masseng {
+    display: flex; /* Создаем flex-контейнер */
+    align-items: center; /* Выравниваем по вертикали по центру */
+}
+
+.masseng textarea {
+    margin: 15px 30px 0px 0px;
+    min-height: 25px;
+    max-height: 118px;
+    min-width: 366px;
+    max-width: 366px;
+    border-radius: 7px;
+    border-color: rgb(27, 121, 121);
+    float: right;
+}
+
+.masseng label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+    float: left;
+    margin: 8px 0px 0px 30px;
+    font-weight: bold;
+}
+
+.capcha {
+    display: flex; /* Создаем flex-контейнер */
+    align-items: center; /* Выравниваем по вертикали по центру */
+}
+
+.capcha input {
+    margin: 15px 266px 0px 0px;
+    height: 25px;
+    width: 130px;
+    border-radius: 7px;
+    border-color: rgb(27, 121, 121);
+    float: right; 
+}
+
+.capcha label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+    float: left;
+    margin: 8px 0px 0px 30px;
+    font-weight: bold;
+}
+
+.button {
+    font-size: 24px;
+}
+
+button {
+    margin: 15px 201px 0px 0px;
+    cursor:pointer;
+    padding: 5px 40px;
+    border-radius: 7px;
+    float: right;
+    color: #666565;
+}
+
+button :hover {
+    opacity: .80;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
